@@ -103,8 +103,6 @@ public class MainActivity extends AppCompatActivity {
         altTextView.setText("Altitude: " + location.getAltitude());
         accTextView.setText("Accuracy: " + location.getAccuracy());
 
-
-        //I think this goes here but maybe not
         Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
 
         try {
@@ -130,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     address += listAddresses.get(0).getCountryName() + "\n";
                 }
             }
-            TextView addressTextView = (TextView) findViewById(R.id.textView6);
+            TextView addressTextView = (TextView) findViewById(R.id.textView7);
             addressTextView.setText(address);
 
         } catch (IOException e) {
